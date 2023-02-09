@@ -38,29 +38,94 @@ int main(void)
 int get_cents(void)
 {
     // TODO
-    return 0;
+    int cents;
+    do
+    {
+        cents = get_int("Change owed: ");
+    }
+    while (cents < 0);
+
+    return cents;
 }
 
 int calculate_quarters(int cents)
 {
-    // TODO
+    // TODO:quarters = 25$
+    if (cents == 25)
+    {
+        return 1;
+    }
+    else if (cents >= 26 && cents <= 49)
+    {
+        return 1;
+    }
+    else if (cents >= 50 && cents <= 74)
+    {
+        return 2;
+    } // And so forth
+    else if (cents >= 75 && cents <= 99)
+    {
+        return 3;
+    }
+    else if (cents >= 100 && cents <= 124)
+    {
+        return 4;
+    }
+    else if (cents >= 125 && cents <= 149)
+    {
+        return 5;
+    }
+    else if (cents >= 150 && cents <= 174)
+    {
+        return 6;
+    }
+
     return 0;
 }
 
+
 int calculate_dimes(int cents)
 {
-    // TODO
+    // TODO dimes = 10$
+    if (cents == 10)
+    {
+        return 1;
+    }
+    else if (cents >= 11 && cents <= 19)
+    {
+        return 1;
+    }
+    else if (cents >= 20 && cents <= 24)
+    {
+        return 2;
+    }
     return 0;
 }
 
 int calculate_nickels(int cents)
 {
-    // TODO
+    // TODO:nickels = 5$
+    if (cents == 5)
+    {
+        return 1;
+    }
+    else if (cents >= 6 && cents <= 9)
+    {
+        return 1;
+    }
     return 0;
 }
 
 int calculate_pennies(int cents)
 {
-    // TODO
+    // TODO:pennies = 1$
+    if (cents == 1)
+    {
+        return 1;
+    }
+    else if (cents >= 2 && cents < 5)
+    {
+        return cents;
+    }
     return 0;
 }
