@@ -15,7 +15,7 @@ Height: 8
   ########    
 ```
 If the user doesn’t, in fact, input a positive integer between 1 and 8, inclusive, when prompted, the program should re-prompt the user until they cooperate:
-```
+``` 
 $ ./mario
 Height: -1
 Height: 0

@@ -1,0 +1,11 @@
+sort1 uses: bubble sort
+
+how do you know? : The average time complexity of the algorithm: O(n^2), the time it takes to sort random numbers and reversed numbers is almost equal, but in the worst case: change the sequence into reverse order, or reverse the reverse order The sequence of numbers becomes a sequence, and each comparison requires an exchange operation, which takes more time than random numbers and reversed numbers.
+
+sort2 uses: merge sort
+
+how do you know? : The time taken by this algorithm (O(N*log N) is always less than the other two algorithms, and is almost equal for numbers of the same length, regardless of the type (sorted, random, reversed), the time it takes to sort almost equal.
+
+sort3 uses: selection sort
+
+how do you know? : The average time complexity used by this algorithm is O(n^2), but for the sorted ones, the time complexity it takes to sort is O(n).
