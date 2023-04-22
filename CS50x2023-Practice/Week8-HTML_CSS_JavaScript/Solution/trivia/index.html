@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+        <link href="styles.css" rel="stylesheet">
+        <title>Trivia!</title>
+        <script>
+            // TODO: Add code to check answers to questions
+            document.addEventListener('DOMContentLoaded', function() {
+                let correct = document.querySelector('.correct')
+
+                correct.addEventListener('click', function() {
+                    correct.style.backgroundColor = 'green'
+                    document.querySelector('#message1').innerHTML = 'Correct!'
+                })
+
+                let incorrect = document.querySelectorAll('.incorrect')
+
+                for (let i = 0; i < incorrect.length; i++) {
+                    incorrect[i].addEventListener('click', function() {
+                        incorrect[i].style.backgroundColor = 'red'
+                        document.querySelector('#message1').innerHTML = 'Inorrect!'
+                    })
+                }
+
+                let input = document.querySelector('input')
+
+                document.querySelector('#check').addEventListener('click', function() {
+                    if (input.value == '7') {
+                        input.style.color = 'green'
+                        document.querySelector('#message2').innerHTML = 'Correct!'
+                    } else {
+                        input.style.color = 'red'
+                        document.querySelector('#message2').innerHTML = 'Incorrect'
+                    }
+                })
+            })
+        </script>
+    </head>
+    <body>
+        <div class="header">
+            <h1>Trivia!</h1>
+        </div>
+
+        <div class="container">
+            <div class="section">
+                <h2>Part 1: Multiple Choice </h2>
+                <hr>
+                <!-- TODO: Add multiple choice question here -->
+                <h3>What is the approximate number of people in South Korea?</h3>
+                <p id="message1"></p>
+                <button class="incorrect">10 Million</button>
+                <button class="incorrect">20 Million</button>
+                <button class="incorrect">30 Million</button>
+                <button class="incorrect">40 Million</button>
+                <button class="correct">50 Million</button>
+            </div>
+
+            <div class="section">
+                <h2>Part 2: Free Response</h2>
+                <hr>
+                <!-- TODO: Add free response question here -->
+                <h3>How many members does BTS(also known as the Bangtan boys, is a K-POP boy band based group) consist of?</h3>
+                <p id="message2"></p>
+                <input type="text" name="number" id="input" autocomplete="off" required maxlength="1">
+                <button id="check">Check Answer</button>
+            </div>
+        </div>
+    </body>
+</html>

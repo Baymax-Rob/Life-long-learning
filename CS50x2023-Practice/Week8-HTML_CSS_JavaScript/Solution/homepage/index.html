@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+        <link href="styles.css" rel="stylesheet">
+        <title>Baymax-Webpage</title>
+        <script>
+            function darkmode() {
+                var setTheme = document.body
+                setTheme.classList.toggle("dark-mode")
+                var theme
+
+                if (setTheme.classList.contains("dark-mode")) {
+                    theme='dark'
+                } else {
+                    theme='light'
+                }
+
+                localStorage.setItem("PageTheme", JSON.stringify(theme))
+            }
+
+            setInterval(() => {
+                let getTheme = JSON.parse(localStorage.getItem("PageTheme"))
+
+                if(getTheme === 'dark'){
+                    document.body.classList = 'dark-mode';
+                } else {
+                    document.body.classList = '';
+                }
+            }, 5);
+    </head>
+    <body>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="#">Jiyong's</a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </header>
+        <button class="button" onclick="darkmode()">
+            dark mode
+        </button>
+        <div class="center">
+            <h3><b>Welcome to my homepage.</b></h3>
+            <img src="./baymax.jpg" width="360" height="480" alt="">
+        </div>
+    </body>
+</html>

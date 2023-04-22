@@ -1,0 +1,7 @@
+If songs.db contains the top 100 songs of one listener from 2018, how would you characterize their audio aura?
+   We know the average energy, valence, and danceability of Spotify's top 100 songs of 2018.
+   So we can compare the average to the average of a listener's top 100 songs.
+
+Hypothesize about why the way you’ve calculated this aura might not be very representative of the listener. What better ways of calculating this aura would you propose?
+    Dividing emotions into six categories sounds plausible, but it's not accurate.
+    More points and more weights will be more accurate than two.
