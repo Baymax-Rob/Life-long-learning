@@ -11,7 +11,7 @@ I am a beginner who loves programming. I want to record and share my learning pr
 - [awesome](https://github.com/sindresorhus/awesome): 😎 Awesome lists about all kinds of interesting topics.
 - [science-da-computacao)](https://github.com/Universidade-Livre/ciencia-da-computacao): 🎓 Um caminho para a educação autodidata em Ciência da Computação!
 - [devops-resources](https://github.com/bregman-arie/devops-resources): DevOps resources - Linux, Jenkins, AWS, SRE, Prometheus, Docker, Python, Ansible, Git, Kubernetes, Terraform, OpenStack, SQL, NoSQL, Azure, GCP
-- [architect-awesome] (https://github.com/xingshaocheng/architect-awesome): 后端架构师技术图谱。
+- [architect-awesome](https://github.com/xingshaocheng/architect-awesome): 后端架构师技术图谱。
 - [freeCodeCamp](https://github.com/freeCodeCamp/freeCodeCamp): freeCodeCamp.org's open-source codebase and curriculum. Learn to code for free.
 - [missing-semester](https://github.com/missing-semester/missing-semester):The Missing Semester of Your CS Education 📚.
 - [awesome-cs-cloudnative-blockchain](https://github.com/cubxxw/awesome-cs-cloudnative-blockchain):📚 菜鸟成长手册🚀 CS系列 、云原生系列、区块链系列、web3系列🔥、Golang系列💡......
