@@ -1,0 +1,1 @@
+This repository is a [CS50p2022-Harvard-University](https://cs50.harvard.edu/python/2022/) exercise set and experimental summary repository for the convenience of rabbits who love to learn without tools. If you have tools, it is recommended to go to the official website address to learn: https://cs50.harvard.edu/python/2022/
